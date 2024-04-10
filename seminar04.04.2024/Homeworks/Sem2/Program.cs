@@ -8,7 +8,7 @@
 Задача 4: Напишите программу, которая на вход принимает натуральное число N, а на выходе показывает его цифры через запятую.*/
 
 //Задача 1
-/*void CheckNum (int a)
+void CheckNum (int a)
 {
     if (a % 7 == 0 && a % 23 == 0)
     {
@@ -82,7 +82,7 @@ void IargestNumberInTheNumber (int num)
 System.Console.Write("Input number from 10 to 99: ");
 int num = Convert.ToInt32(Console.ReadLine());
 IargestNumberInTheNumber (num);
-*/
+
 //Задача 4
 
 void CommaNumber (int num1)
