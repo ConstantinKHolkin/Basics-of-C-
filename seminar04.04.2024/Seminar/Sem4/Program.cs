@@ -93,3 +93,4 @@ int ConvertToNum (int[] array)
     }
     return result;
 }
+
