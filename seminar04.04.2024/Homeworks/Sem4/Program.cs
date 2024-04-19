@@ -55,7 +55,7 @@ RepitRequest ();
 // Задача 2: Задайте массив заполненный случайными трёхзначными числами. 
 // Напишите программу, которая покажет количество чётных чисел в массиве.
 
-int[] FillingTheArray (int size)
+int[] FillingTheArray (int size) //Заполнение массива трехзначным числами
 {
     int[] array = new int[size];
     for (int i = 0; i < size; i++)
@@ -65,7 +65,7 @@ int[] FillingTheArray (int size)
     return array;
 }
 
-int SummEvenNumbers (int[] array)
+int SummEvenNumbers (int[] array) //Поиск четных чисел в массиве
 {
     int sum = 0; 
     for (int i = 0; i < array.Length; i++)
