@@ -28,3 +28,5 @@ char[] InputCharArray()
 }
 
 System.Console.WriteLine(CharArrayToString(InputCharArray()));
+
+
