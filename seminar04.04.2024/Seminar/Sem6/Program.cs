@@ -5,28 +5,55 @@
 // Пример
 // [‘a’, ‘b’, ‘c’, ‘d’] => “abcd”
 
-string CharArrayToString(char[] charArray)
+// string CharArrayToString(char[] charArray)
+// {
+//     string result = string.Empty;
+//     for (int i = 0; i < charArray.Length; i++)
+//     {
+//         result = result + charArray[i];
+//     }
+//     return result;
+// }
+
+// char[] InputCharArray()
+// {
+//     System.Console.WriteLine("Input number of array size: ");
+//     int size = Convert.ToInt32(Console.ReadLine());
+//     char[] array = new char[size];
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = Convert.ToChar(Console.ReadLine());
+//     }
+//     return array;
+// }
+
+// System.Console.WriteLine(CharArrayToString(InputCharArray()));
+
+
+// На основе символов строки (тип string) сформировать массив
+// символов (тип char[]). Вывести массив на экран.
+// Указание
+// Метод строки ToCharArray() не использовать.
+// Пример
+// “Hello!” => [‘H’, ‘e’, ‘l’, ‘l’, ‘o’, ‘!’ ]
+
+char[] StringToCharArray (string str)
 {
-    string result = string.Empty;
-    for (int i = 0; i < charArray.Length; i++)
+    char[] chars = new char[str.Length];
+    for (int i = 0; i < str.Length; i++)
     {
-        result = result + charArray[i];
+        chars[i] = str[i];
     }
-    return result;
+    return chars;
 }
 
-char[] InputCharArray()
+void PrintCharsArray(char[] array)
 {
-    System.Console.WriteLine("Input number of array size: ");
-    int size = Convert.ToInt32(Console.ReadLine());
-    char[] array = new char[size];
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = Convert.ToChar(Console.ReadLine());
+        System.Console.Write(" ' " + array[i] + " ' ");
     }
-    return array;
+    System.Console.WriteLine();
 }
 
-System.Console.WriteLine(CharArrayToString(InputCharArray()));
-
-
+PrintCharsArray(StringToCharArray("Hello!"));
