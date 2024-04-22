@@ -37,23 +37,49 @@
 // Пример
 // “Hello!” => [‘H’, ‘e’, ‘l’, ‘l’, ‘o’, ‘!’ ]
 
-char[] StringToCharArray (string str)
+// char[] StringToCharArray (string str)
+// {
+//     char[] chars = new char[str.Length];
+//     for (int i = 0; i < str.Length; i++)
+//     {
+//         chars[i] = str[i];
+//     }
+//     return chars;
+// }
+
+// void PrintCharsArray(char[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         System.Console.Write(" ' " + array[i] + " ' ");
+//     }
+//     System.Console.WriteLine();
+// }
+
+// PrintCharsArray(StringToCharArray("Hello!"));
+
+// Считать строку с консоли, состоящую из латинских
+// букв в нижнем регистре. Выяснить, сколько среди
+// введённых букв гласных.
+// Пример
+// “hello” => 2
+// “world” => 1
+
+int SumOfVowels (string str)
 {
-    char[] chars = new char[str.Length];
+    int result =0;
+    string str1 = "aoeiuy";
     for (int i = 0; i < str.Length; i++)
     {
-        chars[i] = str[i];
+        for (int j = 0; j < str1.Length; j++)
+        {
+            if (str1[j] == str[i])
+            {
+                result++;
+            }
+        }
     }
-    return chars;
-}
+    return result;
+}  
 
-void PrintCharsArray(char[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-    {
-        System.Console.Write(" ' " + array[i] + " ' ");
-    }
-    System.Console.WriteLine();
-}
-
-PrintCharsArray(StringToCharArray("Hello!"));
+System.Console.WriteLine(SumOfVowels("Hello"));
