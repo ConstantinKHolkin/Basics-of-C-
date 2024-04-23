@@ -2,7 +2,8 @@
 
 using System;
 
-public class Answer {
+public class Answer 
+{
     
   static int FindMax(int a, int b, int c)
     {

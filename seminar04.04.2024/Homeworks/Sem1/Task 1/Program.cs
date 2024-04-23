@@ -33,7 +33,8 @@ secondNumber: '3'
 
 using System;
 
-public class Answer {
+public class Answer 
+{
     static void CompareNumbers(int firstNumber, int secondNumber)
     {
         // Введите свое решение ниже
