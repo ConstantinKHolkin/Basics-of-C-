@@ -1,5 +1,5 @@
 ﻿
-string GetLetersFromString (string s)
+string GetLettersFromString (string s)
 {
     string letters ="";
     foreach (char e in s)
@@ -13,4 +13,4 @@ string GetLetersFromString (string s)
 }
 System.Console.WriteLine("Введите строку");
 string str = System.Console.ReadLine();
-System.Console.WriteLine(GetLetersFromString (str));
+System.Console.WriteLine(GetLettersFromString (str));
