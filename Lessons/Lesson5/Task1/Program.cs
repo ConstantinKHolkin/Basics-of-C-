@@ -4,6 +4,7 @@
     {
         return 1;
     }
+    System.Console.WriteLine(n);
      return n * FactNumber(n-1); //Рекурсия
      
     
