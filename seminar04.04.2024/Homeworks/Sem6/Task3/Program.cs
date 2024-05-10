@@ -22,7 +22,7 @@ void Comparison (string str, string str2)
     }
 }
 
-// Console.InputEncoding = System.Text.Encoding.GetEncording("utf-16");
+
 System.Console.WriteLine("Введите строку: ");
 string str = Console.ReadLine();
 str = SimplifyingTheString(str);
